@@ -1,0 +1,6 @@
+name: do-something
+on: push
+
+runs-on: ubuntu-latest
+
+- uses: actions/checkout@v2
