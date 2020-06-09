@@ -25,10 +25,14 @@ import {
 export class AppModule {
 
   constructor(private injector: Injector) {
+  }
+
+  ngDoBootstrap() {
     const el1 = createCustomElement(Comp1Component, { injector: this.injector });
     customElements.define('lib-comp1', el1);
 
     const el2 = createCustomElement(Comp2Component, { injector: this.injector });
     customElements.define('lib-comp2', el2);
+
   }
 }
