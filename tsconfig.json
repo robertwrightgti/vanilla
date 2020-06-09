@@ -17,8 +17,7 @@
     ],
     "paths": {
       "components": [
-        "dist/components/components",
-        "dist/components"
+        "projects/components/src/public-api"
       ]
     }
   },
