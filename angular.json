@@ -73,7 +73,7 @@
             "production": {
               "browserTarget": "componenttest:build:production"
             }
-          },
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
