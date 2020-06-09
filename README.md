@@ -1,3 +1,5 @@
+![](https://github.com/robertwrightgti/componenttest/workflows/do-something/badge.svg)
+
 # Componenttest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
