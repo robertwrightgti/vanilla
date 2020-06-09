@@ -1,4 +1,4 @@
-![](https://github.com/robertwrightgti/componenttest/workflows/BUILD/badge.svg)
+![BUILD](https://github.com/robertwrightgti/componenttest/workflows/BUILD/badge.svg)
 
 # Componenttest
 
