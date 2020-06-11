@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:components": "ng build --prod --project components",
-    "build:elements": "ng build --prod --project elements --output-hashing none && npm run build:files",
+    "build:ui-components": "ng build --prod --project ui-components",
+    "build:ui-components-elements": "ng build --prod --project ui-components-elements --output-hashing none && npm run build:files",
     "build:files": "node pack-elements.js"
   },
   "private": true,

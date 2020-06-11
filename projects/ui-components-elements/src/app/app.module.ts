@@ -5,11 +5,11 @@ import { createCustomElement } from '@angular/elements';
 
 // other project modules
 import {
-  ComponentsModule,
+  UiComponentsModule,
   Comp1Component,
   Comp2Component,
   Comp3Component
-} from 'components';
+} from 'ui-components';
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import {
   ],
   imports: [
     BrowserModule,
-    ComponentsModule
+    UiComponentsModule
   ],
   providers: [],
 

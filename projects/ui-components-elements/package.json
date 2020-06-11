@@ -1,5 +1,5 @@
 {
-  "name": "elements",
+  "name": "ui-components-elements",
   "version": "1.0.0",
   "description": "web components of my elements library",
   "main": "karma.conf.js",
@@ -8,5 +8,5 @@
   },
   "author": "",
   "license": "ISC",
-  "files": ["elements.js", "styles.scss"]
+  "files": ["ui-components-elements.js", "styles.scss"]
 }
