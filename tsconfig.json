@@ -18,6 +18,9 @@
     "paths": {
       "ui-components": [
         "projects/ui-components/src/public-api"
+      ],
+      "activity-feed-ui": [
+        "projects/activity-feed-ui/src/public-api"
       ]
     }
   },

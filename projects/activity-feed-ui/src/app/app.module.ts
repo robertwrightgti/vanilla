@@ -5,6 +5,7 @@ import { UiComponentsModule } from 'ui-components';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
 
 /**
  * ACTIVITY-FEED-UI
@@ -12,14 +13,18 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     UiComponentsModule
   ],
+  exports: [
+    HomeComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class ActivityFeedModule { }
