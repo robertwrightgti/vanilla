@@ -6,6 +6,10 @@ import { UiComponentsModule } from 'ui-components';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+/**
+ * ACTIVITY-FEED-UI
+ */
+
 @NgModule({
   declarations: [
     AppComponent

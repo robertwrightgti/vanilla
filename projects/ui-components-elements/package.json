@@ -8,5 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "files": ["ui-components-elements.js", "styles.scss"]
+  "files": [
+    "ui-components-elements.js",
+    "styles.scss"]
 }

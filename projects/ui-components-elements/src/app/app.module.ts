@@ -11,6 +11,9 @@ import {
   Comp3Component
 } from 'ui-components';
 
+/**
+ * UI-COMPNENTS-ELEMENTS
+ */
 
 @NgModule({
   declarations: [
