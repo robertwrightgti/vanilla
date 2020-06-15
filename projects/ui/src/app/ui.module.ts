@@ -29,4 +29,4 @@ import { Page2Component } from './pages/page2/page2.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class ActivityFeedModule { }
+export class UiModule { }

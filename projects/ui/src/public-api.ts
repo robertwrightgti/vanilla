@@ -1,9 +1,9 @@
 /*
- * Public API Surface of activity-feed-ui
+ * Public API Surface of ui
  */
 
 // module
-export * from './app/app.module';
+export * from './app/ui.module';
 
 // components
 export * from './app/pages/home/home.component';

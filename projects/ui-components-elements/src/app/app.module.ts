@@ -12,7 +12,7 @@ import {
 } from 'ui-components';
 
 /**
- * UI-COMPNENTS-ELEMENTS
+ * UI-COMPONENTS-ELEMENTS
  */
 
 @NgModule({

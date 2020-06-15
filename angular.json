@@ -164,32 +164,32 @@
         }
       }
     },
-    "activity-feed-ui": {
+    "ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "projects/activity-feed-ui",
-      "sourceRoot": "projects/activity-feed-ui/src",
+      "root": "projects/ui",
+      "sourceRoot": "projects/ui/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/activity-feed-ui",
-            "index": "projects/activity-feed-ui/src/index.html",
-            "main": "projects/activity-feed-ui/src/main.ts",
-            "polyfills": "projects/activity-feed-ui/src/polyfills.ts",
-            "tsConfig": "projects/activity-feed-ui/tsconfig.app.json",
+            "outputPath": "dist/ui",
+            "index": "projects/ui/src/index.html",
+            "main": "projects/ui/src/main.ts",
+            "polyfills": "projects/ui/src/polyfills.ts",
+            "tsConfig": "projects/ui/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "projects/activity-feed-ui/src/favicon.ico",
-              "projects/activity-feed-ui/src/assets"
+              "projects/ui/src/favicon.ico",
+              "projects/ui/src/assets"
             ],
             "styles": [
-              "projects/activity-feed-ui/src/styles.scss"
+              "projects/ui/src/styles.scss"
             ],
             "scripts": []
           },
@@ -197,8 +197,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/activity-feed-ui/src/environments/environment.ts",
-                  "with": "projects/activity-feed-ui/src/environments/environment.prod.ts"
+                  "replace": "projects/ui/src/environments/environment.ts",
+                  "with": "projects/ui/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -227,34 +227,34 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "activity-feed-ui:build",
+            "browserTarget": "ui:build",
             "port": 4411
           },
           "configurations": {
             "production": {
-              "browserTarget": "activity-feed-ui:build:production"
+              "browserTarget": "ui:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "activity-feed-ui:build"
+            "browserTarget": "ui:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/activity-feed-ui/src/test.ts",
-            "polyfills": "projects/activity-feed-ui/src/polyfills.ts",
-            "tsConfig": "projects/activity-feed-ui/tsconfig.spec.json",
-            "karmaConfig": "projects/activity-feed-ui/karma.conf.js",
+            "main": "projects/ui/src/test.ts",
+            "polyfills": "projects/ui/src/polyfills.ts",
+            "tsConfig": "projects/ui/tsconfig.spec.json",
+            "karmaConfig": "projects/ui/karma.conf.js",
             "assets": [
-              "projects/activity-feed-ui/src/favicon.ico",
-              "projects/activity-feed-ui/src/assets"
+              "projects/ui/src/favicon.ico",
+              "projects/ui/src/assets"
             ],
             "styles": [
-              "projects/activity-feed-ui/src/styles.scss"
+              "projects/ui/src/styles.scss"
             ],
             "scripts": []
           }
@@ -263,9 +263,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/activity-feed-ui/tsconfig.app.json",
-              "projects/activity-feed-ui/tsconfig.spec.json",
-              "projects/activity-feed-ui/e2e/tsconfig.json"
+              "projects/ui/tsconfig.app.json",
+              "projects/ui/tsconfig.spec.json",
+              "projects/ui/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -275,12 +275,12 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/activity-feed-ui/e2e/protractor.conf.js",
-            "devServerTarget": "activity-feed-ui:serve"
+            "protractorConfig": "projects/ui/e2e/protractor.conf.js",
+            "devServerTarget": "ui:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "activity-feed-ui:serve:production"
+              "devServerTarget": "ui:serve:production"
             }
           }
         }
@@ -410,5 +410,5 @@
       }
     }
   },
-  "defaultProject": "activity-feed-ui"
+  "defaultProject": "ui"
 }

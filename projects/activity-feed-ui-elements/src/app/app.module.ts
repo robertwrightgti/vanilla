@@ -3,9 +3,9 @@ import { NgModule, Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 
 import {
-  ActivityFeedModule,
+  UiModule,
   HomeComponent
-} from 'activity-feed-ui';
+} from 'projects/ui/src/public-api';
 
 /**
  * ACTIVITY-FEED-UI-ELEMENTS
@@ -16,7 +16,7 @@ import {
   ],
   imports: [
     BrowserModule,
-    ActivityFeedModule
+    UiModule
   ],
   providers: []
 })
