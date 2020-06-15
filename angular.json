@@ -67,7 +67,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "componenttest:build",
-            "port": 4412
+            "port": 4410
           },
           "configurations": {
             "production": {
@@ -349,7 +349,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "activity-feed-ui:build"
+            "browserTarget": "activity-feed-ui:build",
+            "port": 4411
           },
           "configurations": {
             "production": {
@@ -531,5 +532,5 @@
       }
     }
   },
-  "defaultProject": "componenttest"
+  "defaultProject": "activity-feed-ui"
 }
