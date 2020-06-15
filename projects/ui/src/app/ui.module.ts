@@ -9,7 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { Page2Component } from './pages/page2/page2.component';
 
 /**
- * ACTIVITY-FEED-UI
+ * UI
  */
 
 @NgModule({

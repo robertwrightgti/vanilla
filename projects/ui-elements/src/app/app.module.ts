@@ -8,7 +8,7 @@ import {
 } from 'projects/ui/src/public-api';
 
 /**
- * ACTIVITY-FEED-UI-ELEMENTS
+ * UI-ELEMENTS
  */
 
 @NgModule({

@@ -45,4 +45,4 @@ testem.log
 .DS_Store
 Thumbs.db
 projects/ui-components-elements/node_modules/
-projects/activity-feed-ui-elements/node_modules/
+projects/ui-elements/node_modules/
