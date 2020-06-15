@@ -1,6 +1,6 @@
-![BUILD](https://github.com/robertwrightgti/componenttest/workflows/BUILD/badge.svg)
+![BUILD](https://github.com/robertwrightgti/vanilla/workflows/BUILD/badge.svg)
 
-# Componenttest
+# Vanilla
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
