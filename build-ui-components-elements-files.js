@@ -11,7 +11,7 @@ const concat = require('concat');
   await fs.ensureDir('./dist/ui-components-elements');
   await concat(files, './dist/ui-components-elements/ui-components-elements.js');
 
-  await fs.copy('./src/assets', './dist/ui-components-elements/assets', err => {
+  await fs.copy('./projects/ui-components-elements/src/assets', './dist/ui-components-elements/assets', err => {
     if (err) return console.error(err)
   });
 

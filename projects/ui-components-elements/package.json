@@ -4,11 +4,7 @@
   "description": "web components of my elements library",
   "main": "karma.conf.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "hello": "echo \"hello\"",
-    "build:ui-components": "ng build --prod --project ui-components",
-    "build:ui-components-elements": "ng build --prod --project ui-components-elements --output-hashing none && npm run build:files",
-    "build:files": "node build-files.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",

@@ -9,8 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:ui-components": "ng build --prod --project ui-components",
-    "build:ui-components-elements": "ng build --prod --project ui-components-elements --output-hashing none && npm run build:files",
-    "build:files": "node pack-elements.js"
+    "build:ui-components-elements": "ng build --prod --project ui-components-elements --output-hashing none && npm run build:ui-components-elements-files",
+    "build:ui-components-elements-files": "node build-ui-components-elements-files.js"
   },
   "private": true,
   "dependencies": {
