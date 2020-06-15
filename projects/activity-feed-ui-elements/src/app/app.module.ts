@@ -26,8 +26,6 @@ export class AppModule {
   }
 
   ngDoBootstrap() {
-    console.log('boostrapping!')
-
     const el1 = createCustomElement(HomeComponent, { injector: this.injector });
     customElements.define('element-home', el1);
   }

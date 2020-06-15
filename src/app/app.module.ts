@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { UiComponentsModule } from 'ui-components';
+import { ActivityFeedModule } from 'activity-feed-ui';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { UiComponentsModule } from 'ui-components';
   ],
   imports: [
     BrowserModule,
-    UiComponentsModule
+    UiComponentsModule,
+    ActivityFeedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
