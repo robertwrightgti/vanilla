@@ -227,8 +227,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ui:build",
-            "port": 4410
+            "browserTarget": "ui:build"
           },
           "configurations": {
             "production": {
@@ -351,7 +350,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ui-elements:build"
+            "browserTarget": "ui-elements:build",
+            "port": 4410
           },
           "configurations": {
             "production": {
