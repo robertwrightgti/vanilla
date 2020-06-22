@@ -14,21 +14,21 @@ import { Page3Component } from './pages/page3/page3.component';
  */
 
 @NgModule({
-  declarations: [
-    UiComponent,
-    HomeComponent,
-    Page2Component,
-    Page3Component
-  ],
-  imports: [
-    BrowserModule,
-    UiRoutingModule,
-    UiComponentsModule
-  ],
-  exports: [
-    HomeComponent
-  ],
-  providers: [],
-  bootstrap: [UiComponent]
+    declarations: [
+        UiComponent,
+        HomeComponent,
+        Page2Component,
+        Page3Component
+    ],
+    imports: [
+        BrowserModule,
+        UiRoutingModule,
+        UiComponentsModule
+    ],
+    exports: [
+        HomeComponent
+    ],
+    providers: [],
+    bootstrap: [UiComponent]
 })
 export class UiModule { }
