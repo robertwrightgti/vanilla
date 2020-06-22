@@ -28,10 +28,7 @@ export class AppModule {
 
   ngDoBootstrap() {
     const uiElement = createCustomElement(UiComponent, { injector: this.injector });
-    customElements.define('ui-app', uiElement);
-
-    // const el1 = createCustomElement(HomeComponent, { injector: this.injector });
-    // customElements.define('element-home', el1);
+    customElements.define('vanilla-ui', uiElement);
   }
 
 }
