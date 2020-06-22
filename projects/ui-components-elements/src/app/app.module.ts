@@ -36,7 +36,7 @@ export class AppModule {
      * this is where we publish things as angular elements
      * - make sure you name them differently to their internal names
      * - only publish the elements you actually need
-     *    (in this case, the activity feed ui)
+     *    (in this case, the ui)
      */
 
     const el1 = createCustomElement(Comp1Component, { injector: this.injector });
