@@ -1,13 +1,65 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>UiElements</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>UiElements</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-  <vanilla-ui message="hello from index.html"></vanilla-ui>
+    <vanilla-ui></vanilla-ui>
+
+    <!-- IE11 friendly code -->
+    <script defer="defer">
+
+        // Module variables
+        var plugin;
+        var el;
+
+        // Temp token data
+        var token;
+        var tokenData = {
+            "data": "someData"
+        };
+
+        // Get the plugin
+        el = document.querySelectorAll('vanilla-ui')[0];
+        el.setAttribute('message', 'hello from html config');
+
+        // Initialise listener for plugin ready
+        el.addEventListener('initialised', function (value) {
+            console.log('it is initialised', value);
+            // plugin = this;
+            // plugin.configuration = {
+            //     api: 'the api address',
+            //     headers: {
+            //         user: {
+            //             'x-custom-tc-csrf': '123123123123123123123'
+            //         }
+            //     },
+            //     getToken: getToken
+            // }
+            // plugin.error.subscribe(function (err) {
+            //     console.error(`vanilla ui plugin error: ${err}`);
+            // })
+
+        })
+
+        function getToken() {
+            if (token) {
+                return new Promise(function (resolve, reject) { resolve(token) });
+            } else {
+                return new Promise(function (resolve, reject) {
+                    token = 'this is a token';
+                    resolve(token);
+                })
+            }
+        }
+
+    </script>
 </body>
+
 </html>
