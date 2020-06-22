@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/ui-components",
       "sourceRoot": "projects/ui-components/src",
-      "prefix": "lib",
+      "prefix": "ui-components-library",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -173,7 +173,7 @@
       },
       "root": "projects/ui",
       "sourceRoot": "projects/ui/src",
-      "prefix": "app",
+      "prefix": "ui",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -410,5 +410,5 @@
       }
     }
   },
-  "defaultProject": "ui"
+  "defaultProject": "ui-elements"
 }

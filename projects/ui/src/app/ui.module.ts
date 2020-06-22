@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { UiComponentsModule } from 'ui-components';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { UiRoutingModule } from './ui-routing.module';
+import { UiComponent } from './ui.component';
 import { HomeComponent } from './pages/home/home.component';
 import { Page2Component } from './pages/page2/page2.component';
+import { Page3Component } from './pages/page3/page3.component';
 
 /**
  * UI
@@ -14,19 +15,20 @@ import { Page2Component } from './pages/page2/page2.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    UiComponent,
     HomeComponent,
-    Page2Component
+    Page2Component,
+    Page3Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    UiRoutingModule,
     UiComponentsModule
   ],
   exports: [
     HomeComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [UiComponent]
 })
 export class UiModule { }

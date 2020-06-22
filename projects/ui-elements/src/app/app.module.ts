@@ -6,6 +6,7 @@ import {
   UiModule,
   HomeComponent
 } from 'projects/ui/src/public-api';
+import { UiComponent } from 'projects/ui/src/app/ui.component';
 
 /**
  * UI-ELEMENTS
@@ -26,8 +27,11 @@ export class AppModule {
   }
 
   ngDoBootstrap() {
-    const el1 = createCustomElement(HomeComponent, { injector: this.injector });
-    customElements.define('element-home', el1);
+    const uiElement = createCustomElement(UiComponent, { injector: this.injector });
+    customElements.define('ui-app', uiElement);
+
+    // const el1 = createCustomElement(HomeComponent, { injector: this.injector });
+    // customElements.define('element-home', el1);
   }
 
 }
