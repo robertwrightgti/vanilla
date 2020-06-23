@@ -3,8 +3,8 @@
   "compilerOptions": {
     "outDir": "../../out-tsc/app",
     "paths": {
-      "ui-components": [
-        "./projects/ui-components/src/public-api"
+      "ui-library": [
+        "./projects/ui-library/src/public-api"
       ]
     },
     "types": []

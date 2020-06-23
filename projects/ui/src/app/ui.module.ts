@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { UiComponentsModule } from 'ui-components';
+import { UiComponentsModule } from 'ui-library';
 
 import { UiRoutingModule } from './ui-routing.module';
 import { UiComponent } from './ui.component';

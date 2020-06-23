@@ -44,5 +44,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-projects/ui-components-elements/node_modules/
+projects/ui-library-elements/node_modules/
 projects/ui-elements/node_modules/

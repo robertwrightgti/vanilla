@@ -17,15 +17,15 @@
         ],
         "paths": {
             // public api files
-            "ui-components": [
-                "projects/ui-components/src/public-api"
+            "ui-library": [
+                "projects/ui-library/src/public-api"
             ],
             "ui": [
                 "projects/ui/src/public-api"
             ],
             // absolute reference to module paths
-            // "ui-components/*": [
-            //     "projects/ui-components/src/*"
+            // "ui-library/*": [
+            //     "projects/ui-library/src/*"
             // ]
         }
     },

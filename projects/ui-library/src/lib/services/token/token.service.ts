@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 import { Observable, from, BehaviorSubject } from 'rxjs';
 import { ConfigurationService } from '../configuration/configuration.service';
 // this project
-// import { ConfigurationService } from 'ui-components/lib/services/configuration/configuration.service';
+// import { ConfigurationService } from 'ui-library/lib/services/configuration/configuration.service';
 
 
 @Injectable({

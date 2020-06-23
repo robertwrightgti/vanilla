@@ -9,10 +9,10 @@ import { ConfigurationService } from '../../services/configuration/configuration
 import { TokenService } from '../../services/token/token.service';
 import { ErrorHandlerService } from '../../services/error-handler/error-handler.service';
 import { customEmit } from '../../utils/utils';
-// import { ConfigurationService } from 'ui-components/lib/services/configuration/configuration.service';
-// import { ErrorHandlerService } from 'ui-components/lib/services/error-handler/error-handler.service';
-// import { TokenService } from 'ui-components/lib/services/token/token.service';
-// import { customEmit } from 'ui-components/lib/utils/utils';
+// import { ConfigurationService } from 'ui-library/lib/services/configuration/configuration.service';
+// import { ErrorHandlerService } from 'ui-library/lib/services/error-handler/error-handler.service';
+// import { TokenService } from 'ui-library/lib/services/token/token.service';
+// import { customEmit } from 'ui-library/lib/utils/utils';
 
 export class InitialisedComponent {
 

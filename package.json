@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:ui-components": "ng build --prod --project ui-components",
+    "build:ui-library": "ng build --prod --project ui-library",
     "build:ui-library-elements": "ng build --prod --project ui-library-elements --output-hashing none && npm run build:ui-library-elements-files",
     "build:ui-library-elements-files": "node build-ui-library-elements-files.js",
     "build:ui": "ng build --prod --project ui",

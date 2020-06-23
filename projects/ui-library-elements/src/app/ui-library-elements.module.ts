@@ -9,7 +9,7 @@ import {
   Comp1Component,
   Comp2Component,
   Comp3Component
-} from 'ui-components';
+} from 'ui-library';
 
 /**
  * UI-LIBRARY-ELEMENTS

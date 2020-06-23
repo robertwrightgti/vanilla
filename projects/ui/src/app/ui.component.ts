@@ -10,8 +10,8 @@ import {
     ConfigurationService,
     TokenService,
     ErrorHandlerService
-} from 'ui-components';
-import { ConfigurationSettings } from 'projects/ui-components/src/lib/interfaces/configuration.interface';
+} from 'ui-library';
+import { ConfigurationSettings } from 'projects/ui-library/src/lib/interfaces/configuration.interface';
 
 
 @Component({

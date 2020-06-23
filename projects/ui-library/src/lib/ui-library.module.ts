@@ -4,7 +4,7 @@ import { Comp2Component } from './comp2/comp2.component';
 import { Comp3Component } from './comp3/comp3.component';
 
 /**
- * UI-COMPONENTS
+ * UI-LIBRARY
  */
 
 @NgModule({
