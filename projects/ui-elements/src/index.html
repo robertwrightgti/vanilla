@@ -18,6 +18,7 @@
         // Module variables
         var plugin;
         var el;
+        var loginregisterurl = 'https://google.com';
 
         // Temp token data
         var token;
@@ -27,24 +28,34 @@
 
         // Get the plugin
         el = document.querySelectorAll('vanilla-ui')[0];
-        el.setAttribute('message', 'hello from html config');
+        el.setAttribute('basepath', 'http://localhost:4410/');
+        el.setAttribute('loginregisterurl', loginregisterurl);
+        el.setAttribute('message', 'hello from the html page');
 
         // Initialise listener for plugin ready
         el.addEventListener('initialised', function (value) {
-            console.log('it is initialised', value);
-            // plugin = this;
-            // plugin.configuration = {
-            //     api: 'the api address',
-            //     headers: {
-            //         user: {
-            //             'x-custom-tc-csrf': '123123123123123123123'
-            //         }
-            //     },
-            //     getToken: getToken
-            // }
-            // plugin.error.subscribe(function (err) {
-            //     console.error(`vanilla ui plugin error: ${err}`);
-            // })
+            // console.log('it is initialised', value);
+            plugin = this;
+            plugin.configuration = {
+                api: 'the api address',
+                userApi: 'http://localhost:3000/api',
+                user: {
+                    givenName: tokenData.given_name,
+                    familyName: tokenData.family_name,
+                    gender: 'male',
+                    email: tokenData.email,
+                    university: 'University of life'
+                },
+                headers: {
+                    user: {
+                        'x-custom-tc-csrf': '123123123123123123123'
+                    }
+                },
+                getToken: getToken
+            }
+            plugin.error.subscribe(function (err) {
+                console.error(`vanilla ui plugin error: ${err}`);
+            })
 
         })
 
@@ -53,6 +64,7 @@
                 return new Promise(function (resolve, reject) { resolve(token) });
             } else {
                 return new Promise(function (resolve, reject) {
+                    // need to know whether this will be a Media Connect-style setup
                     token = 'this is a token';
                     resolve(token);
                 })

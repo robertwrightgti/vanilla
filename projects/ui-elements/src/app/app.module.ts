@@ -7,6 +7,7 @@ import {
   HomeComponent
 } from 'projects/ui/src/public-api';
 import { UiComponent } from 'projects/ui/src/app/ui.component';
+import { Router } from '@angular/router';
 
 /**
  * UI-ELEMENTS
@@ -23,12 +24,16 @@ import { UiComponent } from 'projects/ui/src/app/ui.component';
 })
 export class AppModule {
 
-  constructor(private injector: Injector) {
+  constructor(private injector: Injector, private router: Router) {
   }
 
   ngDoBootstrap() {
+    // create the element
     const uiElement = createCustomElement(UiComponent, { injector: this.injector });
     customElements.define('vanilla-ui', uiElement);
+
+    // go to the plugin's default route
+    this.router.initialNavigation();
   }
 
 }

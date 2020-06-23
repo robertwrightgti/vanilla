@@ -7,11 +7,6 @@
  * @param val - value of the event to pass out
  */
 export function customEmit(context, output, event, val) {
-    console.log("customEmit context", context)
-    console.log("customEmit output", output)
-    console.log("customEmit event", event)
-    console.log("customEmit val", val)
-
     context[output].emit(val);
     const domEvent = new CustomEvent(event, { detail: val });
     context.el.nativeElement.dispatchEvent(domEvent);

@@ -11,6 +11,7 @@ import {
     TokenService,
     ErrorHandlerService
 } from 'ui-components';
+import { ConfigurationSettings } from 'projects/ui-components/src/lib/interfaces/configuration.interface';
 
 
 @Component({
@@ -21,6 +22,9 @@ import {
 export class UiComponent extends InitialisedComponent implements OnInit {
 
     @Input() message: string;
+
+    // Initial config
+    private CONFIGURATION_SETTINGS: ConfigurationSettings = {};
 
     private configurationCompleteSubscription: Subscription;
 
@@ -36,12 +40,10 @@ export class UiComponent extends InitialisedComponent implements OnInit {
     }
 
     ngOnInit() {
-        console.log('keith2', this.message)
-
         this.componentReady();
         this.configurationCompleteSubscription = this.configurationComplete.subscribe((ready) => {
             if (ready && !this.ready) {
-                this.cs.settings = {}; // cms uses this for some other stuff not relevant here
+                this.cs.settings = this.CONFIGURATION_SETTINGS;
                 this.ready = ready;
             }
         });

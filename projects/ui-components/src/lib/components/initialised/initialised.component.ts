@@ -26,7 +26,7 @@ export class InitialisedComponent {
     /**
      * Outputs.
      */
-    @Output() intialised = new EventEmitter();
+    @Output() initialised = new EventEmitter();
 
     /**
      * Inputs.
@@ -43,10 +43,9 @@ export class InitialisedComponent {
 
     @Input() set configuration(config: any) {
 
-        console.log('here is your config!', config)
+        // console.log('here is your config!', config)
 
         const c = config;
-
 
         (() => {
             return new Promise((resolve) => {
@@ -82,14 +81,11 @@ export class InitialisedComponent {
      * componentReady
      */
     componentReady() {
-
-        console.log('componentReady!')
-
         const self = this;
         this.cs._STATE
             .subscribe((state) => {
                 if (state) {
-                    console.log('state', state)
+                    // console.log('state', state)
                     setTimeout(() => {
                         self.state = state;
                         self.configurationComplete.next(true);
@@ -98,8 +94,7 @@ export class InitialisedComponent {
             });
 
         // Emit that the component is ready.
-        customEmit(this, 'intialised', 'intialised', true);
-
+        customEmit(this, 'initialised', 'initialised', true);
     }
 
     private loadConfiguration(c) {

@@ -28,6 +28,7 @@
     "@angular/router": "~9.1.9",
     "concat": "^1.0.3",
     "concat-glob-cli": "^0.1.0",
+    "custom-event-polyfill": "^1.0.7",
     "document-register-element": "^1.7.2",
     "fs-extra": "^9.0.1",
     "rxjs": "~6.5.4",
