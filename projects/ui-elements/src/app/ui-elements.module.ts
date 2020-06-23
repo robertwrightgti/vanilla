@@ -22,7 +22,7 @@ import { Router } from '@angular/router';
   ],
   providers: []
 })
-export class AppModule {
+export class UiElementsModule {
 
   constructor(private injector: Injector, private router: Router) {
   }
