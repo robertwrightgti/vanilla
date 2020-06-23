@@ -12,7 +12,7 @@ import {
 } from 'ui-components';
 
 /**
- * UI-COMPONENTS-ELEMENTS
+ * UI-LIBRARY-ELEMENTS
  */
 
 @NgModule({
@@ -26,7 +26,7 @@ import {
   providers: [],
 
 })
-export class AppModule {
+export class UiLibraryElementsModule {
 
   constructor(private injector: Injector) {
   }

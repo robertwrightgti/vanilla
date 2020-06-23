@@ -3,19 +3,19 @@ const concat = require('concat');
 
 (async function build() {
   const files = [
-    '../../dist/ui-components-elements/main-es5.js',
-    '../../dist/ui-components-elements/polyfills-es5.js',
-    '../../dist/ui-components-elements/runtime-es5.js'
+    '../../dist/ui-library-elements/main-es5.js',
+    '../../dist/ui-library-elements/polyfills-es5.js',
+    '../../dist/ui-library-elements/runtime-es5.js'
   ];
 
-  await fs.ensureDir('../../dist/ui-components-elements');
-  await concat(files, '../../dist/ui-components-elements/ui-components-elements.js');
+  await fs.ensureDir('../../dist/ui-library-elements');
+  await concat(files, '../../dist/ui-library-elements/ui-library-elements.js');
 
-  await fs.copy('./src/assets', '../../dist/ui-components-elements/assets', err => {
+  await fs.copy('./src/assets', '../../dist/ui-library-elements/assets', err => {
     if (err) return console.error(err)
   });
 
-  await fs.copy('package.json', '../../dist/ui-components-elements/package.json', err => {
+  await fs.copy('package.json', '../../dist/ui-library-elements/package.json', err => {
     if (err) return console.error(err)
   });
 

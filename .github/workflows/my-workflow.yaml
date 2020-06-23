@@ -30,4 +30,4 @@ jobs:
     - name: build the app
       run: |
         npm run build:ui-components
-        npm run build:ui-components-elements
+        npm run build:ui-library-elements

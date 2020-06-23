@@ -9,8 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:ui-components": "ng build --prod --project ui-components",
-    "build:ui-components-elements": "ng build --prod --project ui-components-elements --output-hashing none && npm run build:ui-components-elements-files",
-    "build:ui-components-elements-files": "node build-ui-components-elements-files.js",
+    "build:ui-library-elements": "ng build --prod --project ui-library-elements --output-hashing none && npm run build:ui-library-elements-files",
+    "build:ui-library-elements-files": "node build-ui-library-elements-files.js",
     "build:ui": "ng build --prod --project ui",
     "build:ui-elements": "ng build --prod --project ui-elements --output-hashing none && npm run build:ui-elements-files",
     "build:ui-elements-files": "node build-ui-elements-files.js"
