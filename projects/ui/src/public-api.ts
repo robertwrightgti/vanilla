@@ -3,8 +3,8 @@
  */
 
 // module
-export * from 'ui/ui.module';
+export * from './app/ui.module';
 
 // components
-export * from 'ui/ui.component';
-export * from 'ui/pages/home/home.component';
+export * from './app/ui.component';
+export * from './app/pages/home/home.component';

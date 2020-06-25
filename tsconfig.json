@@ -24,12 +24,13 @@
                 "projects/ui/src/public-api"
             ],
             // absolute reference to module paths
-            "ui-library/*": [
-                "projects/ui-library/src/lib/*"
-            ],
-            "ui/*": [
-                "projects/ui/src/app/*"
-            ]
+            // (this causes "module not found" in ng build)
+            // "ui-library/*": [
+            //     "projects/ui-library/src/lib/*"
+            // ],
+            // "ui/*": [
+            //     "projects/ui/src/app/*"
+            // ]
         }
     },
     "angularCompilerOptions": {
