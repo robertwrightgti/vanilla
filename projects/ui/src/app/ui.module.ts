@@ -1,8 +1,10 @@
+// core
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// shared
+import { UiLibraryModule } from 'ui-library';
 
-import { UiComponentsModule } from 'ui-library';
-
+// this project
 import { UiRoutingModule } from './ui-routing.module';
 import { UiComponent } from './ui.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -23,7 +25,7 @@ import { Page3Component } from './pages/page3/page3.component';
     imports: [
         BrowserModule,
         UiRoutingModule,
-        UiComponentsModule
+        UiLibraryModule
     ],
     exports: [
         HomeComponent

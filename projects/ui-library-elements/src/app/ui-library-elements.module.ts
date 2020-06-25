@@ -5,7 +5,7 @@ import { createCustomElement } from '@angular/elements';
 
 // other project modules
 import {
-  UiComponentsModule,
+  UiLibraryModule,
   Comp1Component,
   Comp2Component,
   Comp3Component
@@ -21,7 +21,7 @@ import {
   ],
   imports: [
     BrowserModule,
-    UiComponentsModule
+    UiLibraryModule
   ],
   providers: [],
 

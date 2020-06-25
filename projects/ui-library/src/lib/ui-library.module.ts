@@ -21,4 +21,4 @@ import { Comp3Component } from './comp3/comp3.component';
     Comp3Component
   ]
 })
-export class UiComponentsModule { }
+export class UiLibraryModule { }
