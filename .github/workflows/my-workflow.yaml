@@ -31,3 +31,5 @@ jobs:
       run: |
         npm run build:ui-library
         npm run build:ui-library-elements
+        npm run build:ui
+        npm run build:ui-elements
