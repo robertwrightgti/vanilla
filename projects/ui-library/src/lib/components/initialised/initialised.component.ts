@@ -33,6 +33,7 @@ export class InitialisedComponent {
      */
     @Input() id = '';
     @Input() basepath: string;
+    @Input() loginregisterurl: string;
 
     constructor(
         public el: ElementRef,
@@ -102,8 +103,10 @@ export class InitialisedComponent {
         const config = {
             ...{
                 id: this.id,
-                basepath: this.basepath
-            }, ...c
+                basepath: this.basepath,
+                loginRegisterUrl: this.loginregisterurl
+            },
+            ...c
         };
         this.cs.state = config;
     }
