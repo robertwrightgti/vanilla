@@ -13,7 +13,9 @@
     "build:ui-library-elements-files": "node build-ui-library-elements-files.js",
     "build:ui": "ng build --prod --project ui",
     "build:ui-elements": "ng build --prod --project ui-elements --output-hashing none && npm run build:ui-elements-files",
-    "build:ui-elements-files": "node build-ui-elements-files.js"
+    "build:ui-elements-files": "node build-ui-elements-files.js",
+    "server:mock": "nodemon ./projects/ui/src/server/server.js",
+    "start:dev": "ng serve --configuration=mock"
   },
   "private": true,
   "dependencies": {
@@ -40,10 +42,11 @@
     "@angular-devkit/build-ng-packagr": "~0.901.7",
     "@angular/cli": "~9.1.7",
     "@angular/compiler-cli": "~9.1.9",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
+    "express": "^4.17.1",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
@@ -52,6 +55,7 @@
     "karma-jasmine": "~3.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
     "ng-packagr": "^9.0.0",
+    "nodemon": "^2.0.4",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
