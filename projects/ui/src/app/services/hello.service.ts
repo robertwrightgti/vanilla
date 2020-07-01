@@ -24,17 +24,16 @@ export class HelloService {
         this.DEFAULT_OPTIONS.headers
     );
 
+
     constructor(
         private http: HttpClient,
         private cs: ConfigurationService
-        ) {
-    }
+        ) { }
 
     // use custom decorator to do this
     // @AppendHeaders('api')
     getData(): Observable<any> {
         // Initial set up
-        // const api = `${this.cs.state.api}/hello`;
         const api = `${this.cs.state.api}/hello`;
 
         return this.http.get(

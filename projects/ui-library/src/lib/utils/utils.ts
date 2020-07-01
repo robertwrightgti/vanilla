@@ -20,6 +20,7 @@ export function customEmit(context, output, event, val) {
 export function appendToCollection(source: any[], key: string, dest: any) {
     if (source) {
         if (source[key]) {
+            console.log("beef")
             for (const k of Object.keys(source[key])) {
                 dest = dest.append(k, source[key][k]);
             }
