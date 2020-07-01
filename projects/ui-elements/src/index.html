@@ -49,9 +49,12 @@
                 headers: {
                     user: {
                         'x-custom-tc-csrf': '123123123123123123123'
+                    },
+                    api: {
+                        'x-custom-tc-csrf': '123123123123123123123'
                     }
                 },
-                getToken: getToken
+                // getToken: getToken
             }
             plugin.error.subscribe(function (err) {
                 console.error(`vanilla ui plugin error: ${err}`);

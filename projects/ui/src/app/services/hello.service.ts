@@ -23,13 +23,28 @@ export class HelloService {
         ) {
     }
 
+    // use custom decorator to do this
+    // @AppendHeaders('api')
     getData(): Observable<any> {
         // Initial set up
         // const api = `${this.cs.state.api}/hello`;
         const api = `${this.cs.state.api}/employees`;
 
-        console.log('getData', api)
-
-        return this.http.get(api, this.DEFAULT_OPTIONS);
+        return this.http.get(
+            api,
+            { headers: this.appendHeaders('api', this.DEFAULT_OPTIONS.headers) }
+        );
     }
+
+    // move into utils file
+    private appendHeaders(key: string, headers: HttpHeaders) {
+        if (this.cs.state.headers) {
+          if (this.cs.state.headers[key]) {
+            for (const k of Object.keys(this.cs.state.headers[key])) {
+              headers = headers.append(k, this.cs.state.headers[key][k]);
+            }
+          }
+        }
+        return headers;
+      }
 }

@@ -107,12 +107,4 @@ export class TokenService {
             }
         });
     }
-
-    /**
-     * interactionProxy :: call the emitInteraction in the configuration service, to tell the host we have been doign stuff in the plugin.
-     */
-    interactionProxy() {
-        this.cs.emitInteraction();
-    }
-
 }

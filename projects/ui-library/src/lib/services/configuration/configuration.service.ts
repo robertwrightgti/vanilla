@@ -10,8 +10,6 @@ export class ConfigurationService {
     _STATE = new BehaviorSubject<any>(null);
     settings: any = {};
 
-    private emitInteractionTimer: any;
-
     constructor() { }
 
     @Input() set state(state: any) {
@@ -39,17 +37,6 @@ export class ConfigurationService {
 
     get store() {
         return this._STORE.getValue();
-    }
-
-    // mc module interaction event emitter
-    emitInteraction() {
-        if (this.emitInteractionTimer) {
-            clearTimeout(this.emitInteractionTimer);
-        }
-        this.emitInteractionTimer = setTimeout(() => {
-            const event = new CustomEvent('mc-module-interaction', {});
-            window.dispatchEvent(event);
-        }, 1500);
     }
 
 }

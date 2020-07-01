@@ -27,10 +27,6 @@ export class ApiInterceptor implements HttpInterceptor {
             .pipe(
                 map((event: HttpEvent<any>) => {
                     if (event instanceof HttpResponse) {
-                        const contextId = event.headers.get('context-id');
-                        if (contextId) {
-                            return event.clone({ body: {...event.body, contextId } });
-                        }
                         return event.clone();
                     }
                 }),
@@ -102,8 +98,6 @@ export class ApiInterceptor implements HttpInterceptor {
      * @param request - HttpRequest
      */
     private addOptionalHeaders(request: HttpRequest<any>) {
-
-        this.ts.interactionProxy();
 
         // Get the access token from the service &&
         // - get withCredentialsHeaders
