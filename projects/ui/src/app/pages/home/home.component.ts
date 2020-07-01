@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HelloService } from '../../services/hello.service';
 
 @Component({
   selector: 'ui-home',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+      private helloService: HelloService
+  ) {
+      this.helloService.getData().subscribe((data) => {
+          if(data) {
+              console.log('HelloComponent', data)
+          }
+      })
+  }
 
   ngOnInit(): void {
   }

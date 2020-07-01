@@ -10,6 +10,8 @@ import { UiComponent } from './ui.component';
 import { HomeComponent } from './pages/home/home.component';
 import { Page2Component } from './pages/page2/page2.component';
 import { Page3Component } from './pages/page3/page3.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 /**
  * UI
@@ -24,6 +26,7 @@ import { Page3Component } from './pages/page3/page3.component';
     ],
     imports: [
         BrowserModule,
+        HttpClientModule,
         UiRoutingModule,
         UiLibraryModule
     ],
