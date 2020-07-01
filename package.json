@@ -15,7 +15,8 @@
     "build:ui-elements": "ng build --prod --project ui-elements --output-hashing none && npm run build:ui-elements-files",
     "build:ui-elements-files": "node build-ui-elements-files.js",
     "server:mock": "nodemon ./projects/ui/src/server/server.js",
-    "start:dev": "ng serve --configuration=mock"
+    "start:dev": "ng serve --configuration=mock",
+    "start:mock": "concurrently \"npm run server:mock\" \"npm run start:dev\""
   },
   "private": true,
   "dependencies": {
@@ -46,6 +47,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
+    "concurrently": "^5.2.0",
     "express": "^4.17.1",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",

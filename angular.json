@@ -232,9 +232,6 @@
           "configurations": {
             "production": {
               "browserTarget": "ui:build:production"
-            },
-            "mock": {
-                "proxyConfig": "projects/ui/src/proxy-mock.conf.json"
             }
           }
         },
@@ -359,6 +356,9 @@
           "configurations": {
             "production": {
               "browserTarget": "ui-elements:build:production"
+            },
+            "mock": {
+              "proxyConfig": "projects/ui-elements/src/proxy.conf.js"
             }
           }
         },

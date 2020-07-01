@@ -25,11 +25,11 @@ export class HelloService {
 
     getData(): Observable<any> {
         // Initial set up
-        const api = `${this.cs.state.api}/hello`;
+        // const api = `${this.cs.state.api}/hello`;
+        const api = `${this.cs.state.api}/employees`;
 
         console.log('getData', api)
 
         return this.http.get(api, this.DEFAULT_OPTIONS);
-        // return of("hello");
     }
 }

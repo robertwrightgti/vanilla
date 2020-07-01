@@ -12,7 +12,7 @@ app.get('/test', (req, res) => {
   res.json('here is some data');
 });
 
-app.get('/hello', (req, res) => {
+app.get('/api/employees', (req, res) => {
     returnDataFromFile(res, 'data/hello.json', (data) => {
         // callback function to manipulate data from querystring etc
         return data;
