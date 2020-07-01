@@ -19,3 +19,6 @@ export * from './lib/interceptors/api.interceptor';
 export * from './lib/services/configuration/configuration.service';
 export * from './lib/services/error-handler/error-handler.service';
 export * from './lib/services/token/token.service';
+
+// utils
+export * from './lib/utils/utils';

@@ -8,12 +8,15 @@ import { HelloService } from '../../services/hello.service';
 })
 export class HomeComponent implements OnInit {
 
+    hello: string;
+
   constructor(
       private helloService: HelloService
   ) {
       this.helloService.getData().subscribe((data) => {
           if(data) {
               console.log('HelloComponent', data)
+              this.hello = data;
           }
       })
   }

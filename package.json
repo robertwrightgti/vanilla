@@ -14,7 +14,7 @@
     "build:ui": "ng build --prod --project ui",
     "build:ui-elements": "ng build --prod --project ui-elements --output-hashing none && npm run build:ui-elements-files",
     "build:ui-elements-files": "node build-ui-elements-files.js",
-    "server:mock": "nodemon ./projects/ui/src/server/server.js",
+    "server:mock": "nodemon ./projects/ui-elements/src/server/server.js",
     "start:dev": "ng serve --configuration=mock",
     "start:mock": "concurrently \"npm run server:mock\" \"npm run start:dev\""
   },

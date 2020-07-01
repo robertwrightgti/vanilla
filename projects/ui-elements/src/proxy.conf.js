@@ -4,8 +4,7 @@ const PROXY_CONFIG = {
       "logLevel": "debug",
       "cookieDomainRewrite": "localhost",
       "target": "http://localhost:3410",
-      "secure": false,
-
+      "secure": false
     }
   };
 

@@ -4,7 +4,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 // 3rd party
 import { Observable, of } from 'rxjs';
 // this project
-import { ConfigurationService } from 'ui-library';
+import { ConfigurationService, appendToCollection } from 'ui-library';
+
 
 @Injectable({
     providedIn: 'root'
@@ -17,6 +18,12 @@ export class HelloService {
         })
     }
 
+    private apiHeaders: HttpHeaders = appendToCollection(
+        this.cs.state.headers,
+        'api',
+        this.DEFAULT_OPTIONS.headers
+    );
+
     constructor(
         private http: HttpClient,
         private cs: ConfigurationService
@@ -28,23 +35,13 @@ export class HelloService {
     getData(): Observable<any> {
         // Initial set up
         // const api = `${this.cs.state.api}/hello`;
-        const api = `${this.cs.state.api}/employees`;
+        const api = `${this.cs.state.api}/hello`;
 
         return this.http.get(
             api,
-            { headers: this.appendHeaders('api', this.DEFAULT_OPTIONS.headers) }
+            /*tslint:disable*/
+            { headers: this.apiHeaders }
+            /*tslint:enable*/
         );
     }
-
-    // move into utils file
-    private appendHeaders(key: string, headers: HttpHeaders) {
-        if (this.cs.state.headers) {
-          if (this.cs.state.headers[key]) {
-            for (const k of Object.keys(this.cs.state.headers[key])) {
-              headers = headers.append(k, this.cs.state.headers[key][k]);
-            }
-          }
-        }
-        return headers;
-      }
 }
